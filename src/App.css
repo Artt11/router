@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-nav {
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+#home {
+  color: #ff9800;
+}
+nav a:hover {
+  color: #ff9800;
+}
+
+.itemDetails {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.itemDetails h1 {
+  margin-top: 0;
+  color: #333;
+}
+
+.itemDetails button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.itemDetails button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+h1 {
+  color: #ff9800;
+  margin-top: 0;
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+#bookNow {
+  background-color: #ff9800;
   color: white;
+  border: 2px solid #ff9800;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+#bookNow:hover {
+  background-color: white;
+  color: #ff9800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bookBox {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.placeName {
+  display: grid;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#input {
+  border: 1 solid transparent;
+  border-color: transparent;
+}
+#input:focus {
+  outline: none;
 }
